@@ -1,0 +1,48 @@
+.father {
+  height: 32px;
+}
+
+.title {
+  width: 50%;
+  float: left;
+  margin-top: 5px;
+}
+
+.checker {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.delete {
+  width: 100%;
+}
+
+.sorter {
+  float: right;
+  margin-right: 30px;
+}
+
+.ds_label {
+  float: left;
+  margin-right: 30px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 16px;
+}
+
+.index_adjust {
+  width: 40%;
+  height: 30px;
+}
+
+.value_adjust {
+  width: 50%;
+  height: 30px;
+}
+
+.value_adjust select {
+  float :right;
+  margin-top: 3px;
+}

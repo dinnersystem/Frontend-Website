@@ -1,0 +1,53 @@
+.index_adjust {
+    width: 33%;
+    height: 33px;
+}
+
+.index_adjust label {
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.extend_adjust {
+    width: 50%;
+    height: 33px;
+    float: left;
+    margin-left: 7px;
+}
+
+.value_adjust {
+    width: 12%;
+    height: 33px;
+}
+
+.value_adjust img {
+    height: 80%;
+    margin-left: 9px;
+    margin-top: 3px;
+}
+
+.value_adjust:hover img {
+    filter :invert(1);
+}
+
+
+.dish_name {
+    width: 100%;
+}
+
+.dish_name label {
+    font-size: 15px;
+}
+
+.payment {
+    margin-left: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.time_lockdown {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+

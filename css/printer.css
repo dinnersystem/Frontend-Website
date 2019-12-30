@@ -1,0 +1,50 @@
+.border {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.class_no {
+    text-align: left;
+    width: 100px;
+    float: left;
+}
+
+.department {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+.cls {
+    width: 45%;
+    height: 26cm;
+}
+
+th {
+    font-size: 13px;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    max-height: 100%;
+    text-align: left;
+}
+
+table td {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    height: 26cm;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+}

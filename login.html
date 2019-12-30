@@ -1,0 +1,95 @@
+<html manifest="./manifest.appcache">
+
+<head>
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+		ga('create', 'UA-133939861-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>板橋高中午餐系統</title>
+	<!-- Bootstrap -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+	<link href="./css/theme.css" rel="stylesheet">
+	<link href="./css/login_theme.css" rel="stylesheet">
+	<!-- cover some part of login_theme.css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="./script/modules/jquery-1.10.2.min.js"></script>
+	<script src="./script/modules/bootstrap.min.js"></script>
+	<script src="./script/modules/jquery-cookie.js"></script>
+	<script src="./script/modules/hash.js"></script>
+
+	<script src="./script/function.js"></script>
+	<script src="./script/login.js"></script>
+	<!-- icons (by sean) -->
+	<link rel="apple-touch-icon" sizes="192x192" href="./images/apple-touch-icon.png">
+	<link rel="shortcut icon" sizes="16x16" href="./images/favicon.ico">
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="container animated bounce">
+				<h3> </h3>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12 animated bounceIn" id="content-body">
+					<div style="height:15px;margin-bottom:15px;">
+						<u><a href="manual.pdf" style="color: black;">使用說明</a></u>
+					</div>
+					<div class="inner-content" style="background:#63d6ff">
+						<div class="login-logo">
+							<img src="./images/logo.png" alt="伺服器錯誤">
+						</div>
+
+						<div class="login-form">
+							<div>
+								<div>
+									<label id="error_msg" style="color:red;font-size:30px;"></label>
+								</div>
+								
+								<input style="width:250px" id="id" class="login-input1" type="text" name="id" placeholder="帳號(年+學號) ex. [06610089]"
+								 autocapitalize="none" />
+								<input style="width:250px" id="password" type="password" class="login-input1" name="password" placeholder="密碼(生日) ex. [911023]"
+								 autocapitalize="none" />
+								<input type="hidden" name="dev_id" value="website" />
+							</div>
+						</div>
+						<div class="item login" onclick="normal_login()">
+								<div class="item-img-container">
+									<img style="margin-left: 5px;" class="item-img" src="./images/login.png" />
+								</div>
+								<div class="item-text-container">
+									<p> 登入 </p>
+								</div>
+							</div>
+						
+						<hr />
+
+						<div class="item" onclick="window.location='PrivacyPolicies.txt';">
+							<div class="item-img-container">
+								<img class="item-img" src="./images/arrow.png" />
+							</div>
+							<div class="item-text-container">
+								<p> 隱私權政策 </p>
+							</div>
+						</div>
+					</div>
+					<a style="float:right;color:black;" href="../../pcshic"><u>板橋高中資訊社協助製作</u></a>
+					<a style="float:left;color:white;" href="https://apple.co/2OWRx22"><u>iOS App</u></a>
+					<a style="float:left;color:white;" href="https://bit.ly/2DSJY59"><u>Android App</u></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

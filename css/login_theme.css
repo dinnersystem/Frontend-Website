@@ -1,0 +1,96 @@
+/* 行動版面: 480px 以下。 */
+
+body, .btn-login {
+	font-size: 18px;
+}
+
+/* 表格版面: 481px 到 768px。樣式繼承自: 行動版面。 */
+
+@media only screen and (min-width: 300px) {
+	body, .btn-login {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	body, .btn-login {
+		font-size: 15px;
+	}
+}
+
+.container {
+	max-width: 400px;
+}
+
+.login-logo {
+	text-align: center;
+	padding: 15px 0 10px;
+}
+
+.login-form {
+	text-align: center;
+}
+
+.login-input1 {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 1px 1px 5px rgba(217, 109, 0, 0.5);
+	-moz-box-shadow: 1px 1px 5px rgba(217, 109, 0, 0.5);
+	box-shadow: 1px 1px 5px rgba(217, 109, 0, 0.5);
+	margin: 0 0 8px;
+	border: solid 1px #D96D00;
+}
+
+.login-input2 {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	margin: 0 0 8px;
+	border: 1px solid #999;
+}
+
+.login-box hr {
+	margin: 10px auto 20px;
+	width: 70%;
+	border-top: 1px solid rgba(119, 118, 118, 0.4);
+	border-bottom: 1px solid rgba(240, 240, 240, 0.4);
+}
+
+.login-form input[type="text"], .login-form input[type="password"], .login-form input[type="email"] {
+	display: block;
+	margin: 0 auto 15px;
+	width: 70%;
+	background: #FFF;
+	color: #6c6c6c;
+	padding: 8px;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.login-form input[type="checkbox"] {
+	width: 17px;
+	height: 17px;
+	vertical-align: middle;
+	margin: 0 5px;
+	padding: 0;
+}
+
+.item.login {
+	background-color: white;
+}
+
+.item.login:hover {
+	background-color: #557FC9;
+	color: white;
+}

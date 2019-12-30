@@ -1,0 +1,145 @@
+﻿<html>
+<!-- manifest="./manifest.appcache"-->
+
+<head>
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+		ga('create', 'UA-133939861-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/animate.css" rel="stylesheet">
+	<link href="./css/theme.css" rel="stylesheet">
+
+	<script src="./script/modules/jquery-1.10.2.min.js"></script>
+	<script src="./script/modules/barcode.js"></script>
+	<script src="./script/modules/bootstrap.min.js"></script>
+	<script src="./script/modules/jquery-cookie.js"></script>
+
+	<script src="./script/function.js"></script>
+	<script src="./script/cmd_proc.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12" id="content-body">
+					<div class="animated bounceIn">
+						<div class="inner-content" style="background:#63d6ff">
+							<h1></h1>
+
+							<div style="height:10px;"> </div>
+							<div>
+								<h1> 午餐系統 </h1>
+								<h1 id="welcome" style="font-size: 15px;text-shadow: none;margin: 30px 0px 30px 0px;"></h1>
+								
+								<div style="background-color:white; border-radius: 15px;height: 40px; width:250; margin-left: 25px;">
+									<label style="float: left;margin-left: 15px;margin-top: 10px;"> 學生證條碼 </label>
+									<svg style="float: right;margin-right: 16px;margin-top: 3px;" id="barcode"></svg>
+								</div>
+							</div>
+
+							<div id="student" style="display:none;">
+								<div class="item" onclick="window.location='pages/stu_make_order/';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 點餐 </p>
+									</div>
+								</div>
+
+								<div class="item" onclick="window.location='pages/stu_show_order/';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 查看點單 </p>
+									</div>
+								</div>
+								
+								<div class="item" onclick="window.location='https://goo.gl/forms/x7dyNUtUW6LX38NZ2';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 問題回覆 </p>
+									</div>
+								</div>
+
+								<div class="item" onclick="window.location='pages/thanku/';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 開發者致謝 </p>
+									</div>
+								</div>
+								
+								<div class="item" onclick="window.location='pages/thanku/index_liter.html';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 絃歌文學獎 </p>
+									</div>
+								</div>
+							</div>
+
+							<div id="dinnerman" style="display:none;">
+								<div class="item" onclick="window.location='pages/dm_show_order/';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 查看點單 </p>
+									</div>
+								</div>
+								<div class="item" onclick="window.location='https://goo.gl/forms/x7dyNUtUW6LX38NZ2';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 問題回覆 </p>
+									</div>
+								</div>
+							</div>
+
+							<div id="cafeteria" style="display:none;">
+								<div class="item" onclick="window.location='pages/cafet_show_order/';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 查看點單 </p>
+									</div>
+								</div>
+							</div>
+
+							<div id="factory" style="display:none;">
+								<div class="item" onclick="window.location='../factory_client/client.zip';">
+									<div class="item-img-container">
+										<img class="item-img" src="./images/arrow.png" />
+									</div>
+									<div class="item-text-container">
+										<p> 下載管理插件 </p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<a style="float:right;color:black;font-size:18px;" onclick="window.location='pages/change_password/';"><u>更改登入密碼</u></a>
+						<a style="float:left;color:white;font-size:18px;" onclick="logout();"><u>登出</u></a>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

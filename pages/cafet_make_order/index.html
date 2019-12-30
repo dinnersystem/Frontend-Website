@@ -1,0 +1,70 @@
+<html manifest="../../manifest.appcache">
+
+<head >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>板橋高中午餐系統</title>
+	<!-- Bootstrap -->
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/animate.css" rel="stylesheet">
+	<link href="../../css/detail_theme.css" rel="stylesheet">
+	<link href="../../css/theme.css" rel="stylesheet">
+	<!-- cover some part of login_theme.css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="../../script/modules/jquery-1.10.2.min.js"></script>
+	<script src="../../script/modules/bootstrap.min.js"></script>
+	<script src="../../script/modules/date.js"></script>
+	<script src="../../script/modules/jquery-cookie.js"></script>
+	<script src="../../script/modules/hash.js"></script>
+	<script src="../../script/function.js"></script>
+	
+	<script src="functional.js"></script>
+	<script src="ui.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="head">
+			<h3></h3>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12" id="content-body">
+					<div class="inner-content animated bounceIn" style="background:#63d6ff">
+
+						<div style="height:10px;"> </div>
+						<div style="height:80px;">
+							<h1> 訂餐系統 </h1>
+						</div>
+						<div style="height:80px;display:none;width:100%;margin: auto;">
+							<label id="error_msg" style="color:red;font-size:30px;width:100%;text-align:center;margin-bottom:10px;"></label>
+						</div>
+						<div style="height:10px;"> </div>
+						<div id="loading" style="height:30px;width:90%;margin: auto;">
+							<p style="text-align: center;margin: auto;font-size: 16px;">系統正在下載資料，請耐心等候。</p>
+						</div>
+						<div style="height:10px;"> </div>
+
+
+						<form id="form">
+							<div id="data"></div>
+
+							<div class="info">
+								<div class="index">
+									<label id="chargesum">金額總共: 0$.</label>
+								</div>
+								<div class="value clickable" onclick="submit();">
+									<label>確認點單</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="height: 30px;"></div>
+			<iframe src="../../fragment/reverse_button.php" frameborder="0" scrolling="no" class="criteria" style="height:150px;"></iframe>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.index2 {
+    width: 65%;
+    height: auto;
+    float: left;
+    color: white;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.value2 {
+    width: 25%;
+    height: auto;
+    float: right;
+    color: black;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out; 
+    border-radius: 0px 0px 0px 20px;
+}
+
+.value2 label {
+    float: right;
+}
+
+
+
+
+.index_number {
+    width: 40%;
+}
+
+.value_number {
+    width: 50%;
+}
+
+.value_number label {
+    float: right;
+    margin-right: 5px;
+}
+
+.value_number input[type=number] {
+    float: right;
+    font-size: 15px;
+    width: 130px;
+    margin-top: 5px; 
+}
+
+.person_bar {
+    width: 100%;
+    height: auto;
+    float: left;
+    color: white;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+    border-radius: 0px 0px 30px 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.person_bar label {
+    font-size: 15px;
+}
+
+.paid {
+    transform:  scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.unpaid {
+    background-color: black;
+    color: white;
+}
+
+
+.criteria {
+    transition: height 1s ease-in-out;
+}

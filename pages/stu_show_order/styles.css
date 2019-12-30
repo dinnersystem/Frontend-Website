@@ -1,0 +1,66 @@
+.index_adjust {
+    width: 40%;
+    height: 33px;
+}
+
+.index_adjust label {
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.index_adjust img {
+    height: 80%;
+    margin-left: 9px;
+    margin-bottom: 13px;
+}
+
+
+.value_adjust {
+    width: 12%;
+    height: 33px;
+}
+
+.value_adjust img {
+    height: 80%;
+    margin-left: 9px;
+    margin-top: 3px;
+}
+
+.value_adjust:hover img {
+    filter :invert(1);
+}
+
+
+.dish_name {
+    width: 100%;
+}
+
+.dish_name label {
+    font-size: 15px;
+}
+
+.payment {
+    margin-left: 10px;
+    width: 120px;
+    float: left;
+    height: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+    color: white;
+}
+
+.payment label {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    margin-top: 4px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.payment label:hover {
+    color: white;
+}

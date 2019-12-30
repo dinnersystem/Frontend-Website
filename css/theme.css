@@ -1,0 +1,251 @@
+.phone_view {
+    transform-origin:left top;
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5); 
+}
+
+.content {
+    margin: 0 auto 0;
+	max-width: 300px;
+}
+
+.inner-content {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	margin: 0 0 8px;
+}
+
+html, body {
+	height: 100%;/* The html and body elements cannot have any padding or margin. */
+	font-family: Microsoft JhengHei, Arial;
+}
+body {
+	background: #557FC9;
+	font-family: Microsoft JhengHei, Arial;
+	line-height: 1.42857143;
+	color: #333;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: auto;
+}
+/* Wrapper for page content to push down footer */
+#wrap{
+	margin-bottom: 25px;
+}
+
+h1 {
+	color: #000000d6;
+	text-align: center;
+	text-shadow: 2px 2px 2px #0000004d;
+	font-weight: normal;
+	margin: 60px 0 10px;
+	letter-spacing: 3px;
+	font-family:Microsoft JhengHei ,Arial;
+}
+h2 {
+	font-size: 18px;
+	color: #3079ed;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+h3 {
+	color: #000000d6;
+	text-align: center;
+	text-shadow: 2px 2px 2px #0000004d;
+	font-weight: normal;
+	margin: 60px 0 10px;
+	letter-spacing: 3px;
+}
+p {
+	width: 100%;
+	height: 100%;
+	margin-left: 25%;
+	margin-top: 8px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.item-img-container {
+	float:left;
+	height: 80%;
+	width: 40px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.item-img {
+	max-height: 75%;
+	width: auto;
+	margin-left: 30%;
+	margin-top: 5px;
+}
+
+.item {
+	height: 50px;
+	font-size: 25px;
+	background-color: #a5a5a5;
+	border: 1px solid #428bca;
+	border-radius: 16px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 16px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	transition: all .2s ease-in-out; 
+}
+
+.item:hover {
+	transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+    width:100%;
+    height:40px;
+}
+
+.inner-title {
+    width: 95%;
+    height: 100%;
+    float :left;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 20px 40px 0px;
+}
+
+.title label {
+    font-size: 30px;
+    float:left;
+}
+
+hr {
+    width: 100%;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.special {
+    border-top: 2px solid black;
+}
+
+
+.info {
+    width:100%;
+    height:30px; 
+    margin-top: 10px;
+}
+
+.info label {
+    font-size: 20px;
+}
+
+.index {
+    width: 60%;
+    height: auto;
+    float: left;
+    color: white;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.value {
+    width: 30%;
+    height: auto;
+    float: right;
+    color: black;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out; 
+    border-radius: 0px 0px 0px 20px;
+}
+
+.extend {
+    height: auto;
+    color: white;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+.value label {
+    float: right;
+}
+
+.clickable {
+    color: black;
+    background-color: white;
+}
+
+.clickable:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+}
+
+.group-radio {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    width :70%;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #557FC9;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.group-radio label {
+    margin-top: 10px;
+    color:white;
+}
+
+
+
+.another_btn {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+.dish_content {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.side_btn {
+	height: 20px;
+	float: right;
+	margin-left:10px;
+}
+
+.side_btn:hover {
+	cursor: pointer;
+}
+
+
+.red-highlight {
+	background-color: #dc2828;
+}

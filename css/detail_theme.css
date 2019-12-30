@@ -1,0 +1,63 @@
+.index2 {
+    width: 40%;
+    height: auto;
+    float: left;
+    color: white;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.value2 {
+    width: 50%;
+    height: auto;
+    float: right;
+    color: black;
+    background-color: #557FC9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out; 
+    border-radius: 0px 0px 0px 20px;
+}
+
+.value2 label {
+    float: right;
+    margin-right: 3px;
+}
+
+
+
+.criteria {
+    transition: height 0.5s;
+}
+
+.notify {
+    margin: auto;
+    width: 80%;
+}
+
+.notify h5 {
+    color: red;
+}
+
+
+.selectable {
+    width: 25%;
+    height: auto;
+    float: right;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in-out; 
+    border-radius: 0px 0px 0px 20px;
+    background-color: white;
+    color: black;
+}
+
+.selectable label {
+    float: right;
+}
+
+.selected {
+    transform :scale(1.1);
+    background-color: black;
+    color: white;
+}
