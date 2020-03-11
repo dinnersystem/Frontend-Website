@@ -6,7 +6,7 @@ function submit() {
     var did = $(this).parent().attr('id').split('_')[1];
     var server_respond;
     
-    make_order(null, did, "self", function (result) { server_respond = result });
+    make_order(did, function (result) { server_respond = result });
     
     $(document).ajaxStop(function () {
         if (server_respond == "Impossible to make the order." || server_respond == "Off hours") {
