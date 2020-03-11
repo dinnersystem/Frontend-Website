@@ -1,7 +1,7 @@
 function make_order(value) {
     var dname = (value["dish"].length == 1 ? value['dish'][0]['dish_name'] : "自訂套餐");
     var has_paid = (value['money']["payment"][0]['paid'] == "true");
-    var highlight = (value['user']['id'] !== value['order_maker']['id']);
+    var highlight = false;
 
     var lower_bound = value["money"]["payment"][0]["able_dt"];
     var upper_bound = value["money"]["payment"][0]["freeze_dt"];
