@@ -8,7 +8,7 @@ function login(uid, pswd, callback, done) {
     $.post(url, { cmd: "login", "id": uid, "password": pswd, "device_id": "website" }, (data) => { json = data; }).done(() => { callback(json); done(); });
 }
 
-function logout(done) { $.get(url, { "cmd": "logout" }).done(done); }
+function logout(done) { $.post(url, { "cmd": "logout" }).done(done); }
 
 function make_payment(id, type, pin, callback, target = true) {
     $.post(url, { "cmd": "payment_" + type, "target": target, "order_id": id, "password": pin }, (data) => { callback(data); });
@@ -41,3 +41,6 @@ function get_money(callback) {
         try { result = $.parseJSON(data)["money"]; } catch (e) { result = null; }
     }).done(function () { callback(result); });
 }
+
+function change_password(old_pass, new_pass, callback) { $.post(url, { "cmd": "change_password", "old_pswd": old_pass, "new_pswd": new_pass }, callback); }
+function select_order(start, end, callback) { $.post(url, { "cmd": "select_self", "esti_start": start, "esti_end": end, "history": "true" }, callback); }

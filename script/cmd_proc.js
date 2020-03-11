@@ -59,9 +59,4 @@ $(document).ready(() => {
     });
 });
 
-function logout() {
-	$.get( "../backend/backend.php?cmd=logout", function( data ) {
-	    window.localStorage.clear();
-		window.location = "login.html";
-	});
-}
+function reset() { window.localStorage.clear(); window.location = "login.html"; }

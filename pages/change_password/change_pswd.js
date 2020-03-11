@@ -1,12 +1,10 @@
 function change_pswd() {
     var old_pswd = $("#old").val();
     var new_pswd = $("#new").val();
-    $.get("../../../backend/backend.php?cmd=change_password&old_pswd=" + old_pswd + "&new_pswd=" + new_pswd, function (data) {
-        if (data.charCodeAt(0) === 0xFEFF) data = data.substr(1);
+    change_password(old_pswd, new_pswd, (data) => {
         try {
-            if ($.parseJSON(data) == null) {
-                throw new Exception("Invalid");
-            }
+            if ($.parseJSON(data) == null) throw new Exception("Invalid");
+
             $("#error_msg").text("更改成功");
             setTimeout(function () {
                 window.history.back();

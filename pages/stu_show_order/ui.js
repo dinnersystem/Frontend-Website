@@ -5,7 +5,7 @@ function make_order(value) {
 
     var lower_bound = value["money"]["payment"][0]["able_dt"];
     var upper_bound = value["money"]["payment"][0]["freeze_dt"];
-    var expired = !moment().isBetween(lower_bound ,upper_bound);
+    var expired = !moment().isBetween(lower_bound, upper_bound);
 
     return '<div id="' + value['id'] + '"><div class="info"><div class="index index_adjust"><label>付款狀態:</label>' +
         '<img src="../../images/' + (has_paid ? 'paid' : 'unpaid') + '.png"></img></div>' +
@@ -17,10 +17,9 @@ function make_order(value) {
 
 function load() {
     var today = moment().format("YYYY/MM/DD");
-    var url = "../../../backend/backend.php?cmd=select_self&history=true&esti_start=" + today + "-00:00:00&esti_end=" + today + "-23:59:59";
 
     $("#loading").css("display", "block");
-    $.get(url, function (data) {
+    select_order(today + "-00:00:00", today + "-23:59:59", (data) => {
         var json = $.parseJSON(data);
         $("#data").empty();
         for (var key in json) {
@@ -29,7 +28,6 @@ function load() {
         }
         $(".value.clickable").off('click').click(payment);
         $(".value_adjust.clickable").off('click').click(del_order);
-    }).done(function () {
         $("#loading").css("display", "none");
     });
     update_money();
@@ -37,7 +35,7 @@ function load() {
 
 function update_money() {
     get_money((value) => {
-        if(value == null) {
+        if (value == null) {
             $("#money").text("- $.");
         } else {
             $("#money").text(value + " $.");
