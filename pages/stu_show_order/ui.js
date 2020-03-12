@@ -45,6 +45,4 @@ function update_money() {
     });
 }
 
-$(document).ready(function () {
-    load();
-});
+$(document).ready(load);
