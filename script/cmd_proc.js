@@ -30,6 +30,7 @@ $(document).ready(() => {
 
     if(opers['select_class']) {
         $("#dinnerman").css("display" ,"block");
+        $("#change_password").css("display" ,"none");
         //welcome += "代訂";
     }
 
